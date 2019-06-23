@@ -1,0 +1,41 @@
+#scoreboard p {
+  margin-top: 12px;
+}
+#scoreboard .player {
+  background-color: #ff5252;
+}
+.choice {
+  color: #ff5252;
+  font-size: 7em;
+}
+#icons i:hover {
+  cursor: pointer;
+  color: black;
+}
+#modal {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+#modal #modal-content {
+  background-color: white;
+}
+#restart {
+  border: none;
+  color: white;
+  background-color: #ff5252;
+  padding: 8px 34px;
+  border-radius: 2px;
+  display: none;
+}
+#restart:hover {
+  background-color: black;
+}
+@media screen and (max-width: 600px) {
+  .choice {
+    font-size: 5em;
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rock Paper Scissors</title>
+    <!--Adding css-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Adding javascript-->
+    <script src="game.js"></script>
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="text-center">Rock Paper Scissors</h1>
+      <!--Scoreboard-->
+      <div id="scoreboard" class="mt-4 d-flex">
+        <div class="player flex-fill">
+          <p class="text-center text-white">
+            Player:<span class="ml-1" id="playerScore">0</span>
+          </p>
+        </div>
+        <div class="computer bg-dark flex-fill">
+          <p class="text-center text-white">
+            Computer:<span class="ml-1" id="computerScore">0</span>
+          </p>
+        </div>
+      </div>
+
+      <h3 class="text-center mt-4">Make your selection</h3>
+      <!--Icons-->
+      <div id="icons" class="mt-5 d-flex justify-content-around">
+        <i id="rock" class="choice fas fa-hand-rock"></i>
+        <i id="paper" class="choice fas fa-hand-paper"></i>
+        <i id="scissors" class="choice fas fa-hand-scissors"></i>
+      </div>
+      <!--Restart Game-->
+      <button id="restart" class="mx-auto mt-5">Restart Game</button>
+    </div>
+    <!--Modal-->
+    <div id="modal" class="justify-content-center align-items-center">
+      <div id="modal-content" class="text-center py-4 px-5 rounded-lg"></div>
+    </div>
+  </body>
+</html>
